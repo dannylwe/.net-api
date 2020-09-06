@@ -16,7 +16,11 @@ dotnet add package Microsoft.EntityFrameworkCore.Design
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 
 ## Add dotnet migration tools
-dotnet tool install --global dotnet-ef
+dotnet tool install --global dotnet-ef  
+[connection string info](https://www.connectionstrings.com/sql-server-2017/)  
+`run migrations`: dotnet-ef migrations add <nameOfMigration>  
+`undo migrations`: dotnet ef migrations remove  
+`run migrations`: dotnet-ef database update  
 
 ## Get all commands
 curl -XGET https://localhost:5001/api/commands --insecure  
