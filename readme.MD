@@ -22,6 +22,9 @@ dotnet tool install --global dotnet-ef
 `undo migrations`: dotnet ef migrations remove  
 `run migrations`: dotnet-ef database update  
 
+## Add automapper for DTO
+dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection
+
 ## Get all commands
 curl -XGET https://localhost:5001/api/commands --insecure  
 
